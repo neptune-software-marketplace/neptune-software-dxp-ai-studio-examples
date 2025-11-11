@@ -1,0 +1,221 @@
+{
+	"id": "52018073-b9b4-f011-8e60-000d3ab62c7a",
+	"createdAt": "2025-10-29T11:21:49.010Z",
+	"createdBy": "ext-fabrizio.pace@neptune-software.com",
+	"config": {
+		"entityId": "3299AFD2-0816-EC11-AE72-0050F255283A",
+		"operations": {
+			"C": {
+				"enabled": true
+			},
+			"R": {
+				"enabled": true,
+				"fields": [
+					{
+						"fieldName": "id",
+						"fieldType": "uuid",
+						"isUnique": true,
+						"isNullable": false,
+						"generationStrategy": "uuid",
+						"included": true
+					},
+					{
+						"fieldName": "createdAt",
+						"fieldType": "bigint",
+						"isNullable": false,
+						"included": true
+					},
+					{
+						"fieldName": "createdBy",
+						"fieldType": "text",
+						"isNullable": false,
+						"included": true
+					},
+					{
+						"fieldName": "updatedAt",
+						"fieldType": "bigint",
+						"isNullable": false,
+						"included": true
+					},
+					{
+						"fieldName": "updatedBy",
+						"fieldType": "text",
+						"isNullable": false,
+						"included": true
+					},
+					{
+						"id": "2e4cccad-e719-4a21-85f2-225baaad0790",
+						"fieldName": "name",
+						"fieldType": "text",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "9c8b4e75-83e4-4605-a00a-d060cc186305",
+						"fieldName": "part_number",
+						"fieldType": "text",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "fef182c1-9d31-41d1-a75b-c4c4e06e25f4",
+						"fieldName": "latitude",
+						"fieldType": "decimal",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "5e1d6d88-12a6-4c95-816e-cf24bc6a53f8",
+						"fieldName": "longitude",
+						"fieldType": "decimal",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "766198a9-345d-4b9c-a4dd-ceb6aa8c87ea",
+						"fieldName": "checkup_date",
+						"fieldType": "timestamp",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "10759ff4-c100-455f-8eff-4a1cf9746018",
+						"fieldName": "checkup_interval",
+						"fieldType": "integer",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "6ae1e4f7-848b-439f-fb83-3a42d3f6be77",
+						"fieldName": "days_until_check",
+						"fieldType": "integer",
+						"description": "Maintained automatically",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "5f02b118-1e1a-40f1-a2b4-a0d4b503ed2d",
+						"fieldName": "assigned_for_checking",
+						"fieldType": "boolean",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "a807b742-38a8-43c1-a282-b027bdb965d6",
+						"fieldName": "assigned_to",
+						"fieldType": "text",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "a408e4a3-bec2-4116-ee75-796719864e1a",
+						"fieldName": "pdf",
+						"fieldType": "text",
+						"isNullable": true,
+						"included": true
+					}
+				]
+			},
+			"U": {
+				"enabled": true,
+				"fields": [
+					{
+						"id": "2e4cccad-e719-4a21-85f2-225baaad0790",
+						"fieldName": "name",
+						"fieldType": "text",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "9c8b4e75-83e4-4605-a00a-d060cc186305",
+						"fieldName": "part_number",
+						"fieldType": "text",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "fef182c1-9d31-41d1-a75b-c4c4e06e25f4",
+						"fieldName": "latitude",
+						"fieldType": "decimal",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "5e1d6d88-12a6-4c95-816e-cf24bc6a53f8",
+						"fieldName": "longitude",
+						"fieldType": "decimal",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "766198a9-345d-4b9c-a4dd-ceb6aa8c87ea",
+						"fieldName": "checkup_date",
+						"fieldType": "timestamp",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "10759ff4-c100-455f-8eff-4a1cf9746018",
+						"fieldName": "checkup_interval",
+						"fieldType": "integer",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "6ae1e4f7-848b-439f-fb83-3a42d3f6be77",
+						"fieldName": "days_until_check",
+						"fieldType": "integer",
+						"description": "Maintained automatically",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "5f02b118-1e1a-40f1-a2b4-a0d4b503ed2d",
+						"fieldName": "assigned_for_checking",
+						"fieldType": "boolean",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "a807b742-38a8-43c1-a282-b027bdb965d6",
+						"fieldName": "assigned_to",
+						"fieldType": "text",
+						"isNullable": true,
+						"included": true
+					},
+					{
+						"id": "a408e4a3-bec2-4116-ee75-796719864e1a",
+						"fieldName": "pdf",
+						"fieldType": "text",
+						"isNullable": true,
+						"included": true
+					}
+				]
+			},
+			"D": {
+				"enabled": true
+			}
+		}
+	},
+	"name": "equipmentManagementAI",
+	"ver": "25.11.11.1650",
+	"version": null,
+	"description": [
+		"==OBJECT STRING==",
+		"You are a tool to help the user to manage the equipment table.\r",
+		"\r",
+		"You are able to:\r",
+		"- select a number of equipment rows and returning the data to the user;\r",
+		"- add a new equipment to the table;\r",
+		"- update a specific data by a given field as key;\r",
+		"- delete a specific equipment by a given field as key.\r",
+		"\r",
+		"To create a new equipment ALWAYS generate a valid UUID (this needs to be ALWAYS in uppercase) and NEVER ask the user to provide it. Use the current user id for the fields: createdBy and updatedBy. Use the current date for the fields: createdAt, updatedAt. NEVER ask the user to provide them. Return to the user the data added to the table. \r",
+		"\r",
+		"To update or delete components if the user does not provide a valid UUID, ALWAYS use the field provided to retreive it.\r",
+		"\r",
+		"ALWAYS return to the user the exact table structure for any operation done."
+	],
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"type": "TABLE"
+}

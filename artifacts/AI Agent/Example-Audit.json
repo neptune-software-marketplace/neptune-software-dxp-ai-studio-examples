@@ -1,0 +1,50 @@
+{
+	"id": "18210c21-9eb4-f011-8e60-000d3ab62c7a",
+	"createdAt": "2025-10-29T08:06:11.100Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"config": {
+		"modelConfig": {
+			"response_format": "text",
+			"temperature": 1,
+			"schema": {}
+		},
+		"vectorConfig": {
+			"k": 1,
+			"threshold": 0.8
+		},
+		"onlyMetadata": false,
+		"provider": {},
+		"maxSteps": 2
+	},
+	"name": "Example-Audit",
+	"ver": "25.11.11.1753",
+	"version": null,
+	"description": "Evaluates documents for contractual, legal, and compliance risks.",
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"model": "5bd7a1a2-a2af-f011-8e61-000d3aba8c49",
+	"localMCPConnections": [],
+	"remoteMCPConnections": [],
+	"roles": [],
+	"tools": [
+		{
+			"id": "e25f4b05-a5b4-f011-8e60-000d3ab62c7a",
+			"name": "NaiaAuditEmail",
+			"ver": "25.11.11.1452"
+		},
+		{
+			"id": "77d392cd-9ab4-f011-8e60-000d3ab62c7a",
+			"name": "NaiaAudit_Interface",
+			"ver": "25.11.11.1451"
+		}
+	],
+	"tableSources": [],
+	"outputGuardrailsMap": [],
+	"inputGuardrailsMap": [],
+	"prompts": [
+		{
+			"id": "106346b4-24bf-f011-8194-0022489d3772",
+			"name": "106346b4-24bf-f011-8194-0022489d3772",
+			"ver": "25.11.11.1734"
+		}
+	]
+}

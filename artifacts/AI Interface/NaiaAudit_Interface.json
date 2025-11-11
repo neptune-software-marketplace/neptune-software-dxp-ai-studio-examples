@@ -1,0 +1,48 @@
+{
+	"id": "77d392cd-9ab4-f011-8e60-000d3ab62c7a",
+	"createdAt": "2025-10-29T07:42:22.556Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"config": {
+		"serverScript": "dc041aad-99b4-f011-8e60-000d3ab62c7a",
+		"parameters": {
+			"document_text": {
+				"description": "The full text content of the document to audit (PDF or image text should be extracted before).",
+				"type": "string"
+			},
+			"file_name": {
+				"description": "The name of the document being audited (used for display in the report).",
+				"type": "string"
+			}
+		}
+	},
+	"name": "NaiaAudit_Interface",
+	"ver": "25.11.11.1451",
+	"version": null,
+	"description": [
+		"==OBJECT STRING==",
+		"Checks for missing clauses (GDPR, Confidentiality, Liability, Termination, Security, etc.) and produces a structured audit report.\r",
+		"Returns a concise summary showing Pass/Fail status, the main findings, and actionable recommendations to fix any detected issues.\r",
+		"\r",
+		"Input Parameters:\r",
+		"\r",
+		"document_text → The text content of the document (automatically extracted by the agent).\r",
+		"\r",
+		"file_name → The name of the document being audited.\r",
+		"\r",
+		"Output:\r",
+		"A structured result containing:\r",
+		"\r",
+		"document_label → File name or label of the audited document\r",
+		"\r",
+		"status → “Pass” or “Fail”\r",
+		"\r",
+		"findings → A short, readable list of the missing or risky clauses\r",
+		"\r",
+		"remediation → Recommendations on what to add or fix\r",
+		"\r",
+		"Note:\r",
+		"Formatting and user-facing presentation (Markdown headers, bullet points, emojis, and the closing message “This document has been Audited by Naia-Audit”) are handled by the Agent instructions, not the tool."
+	],
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"type": "SCRIPT"
+}

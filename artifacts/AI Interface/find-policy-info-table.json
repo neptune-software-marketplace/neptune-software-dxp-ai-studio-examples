@@ -1,0 +1,106 @@
+{
+	"id": "41bd90f0-c1b0-f011-8e61-000d3addf309",
+	"createdAt": "2025-10-24T10:12:26.990Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"config": {
+		"entityId": "A9D67F89-C1B0-F011-8E61-000D3ADDF309",
+		"operations": {
+			"C": {
+				"enabled": false
+			},
+			"R": {
+				"enabled": true,
+				"fields": [
+					{
+						"fieldName": "id",
+						"fieldType": "uuid",
+						"isUnique": true,
+						"isNullable": false,
+						"generationStrategy": "uuid",
+						"included": true
+					},
+					{
+						"fieldName": "createdAt",
+						"fieldType": "bigint",
+						"isNullable": false,
+						"included": true
+					},
+					{
+						"fieldName": "createdBy",
+						"fieldType": "text",
+						"isNullable": false,
+						"included": true
+					},
+					{
+						"fieldName": "updatedAt",
+						"fieldType": "bigint",
+						"isNullable": false,
+						"included": true
+					},
+					{
+						"fieldName": "updatedBy",
+						"fieldType": "text",
+						"isNullable": false,
+						"included": true
+					},
+					{
+						"id": "b61b7b3a-acc2-4354-aab8-46e24ff8313f",
+						"fieldName": "policy_name",
+						"fieldType": "text",
+						"isUnique": false,
+						"included": true
+					},
+					{
+						"id": "3c51abb6-4853-4f18-d15d-7f8883d48023",
+						"fieldName": "summary",
+						"fieldType": "text",
+						"isUnique": false,
+						"included": true
+					},
+					{
+						"id": "684e1743-a574-4c47-f0c4-8643cd345f0a",
+						"fieldName": "details",
+						"fieldType": "text",
+						"isUnique": false,
+						"included": true
+					}
+				]
+			},
+			"U": {
+				"enabled": false,
+				"fields": [
+					{
+						"id": "b61b7b3a-acc2-4354-aab8-46e24ff8313f",
+						"fieldName": "policy_name",
+						"fieldType": "text",
+						"isUnique": false,
+						"included": true
+					},
+					{
+						"id": "3c51abb6-4853-4f18-d15d-7f8883d48023",
+						"fieldName": "summary",
+						"fieldType": "text",
+						"isUnique": false,
+						"included": true
+					},
+					{
+						"id": "684e1743-a574-4c47-f0c4-8643cd345f0a",
+						"fieldName": "details",
+						"fieldType": "text",
+						"isUnique": false,
+						"included": true
+					}
+				]
+			},
+			"D": {
+				"enabled": false
+			}
+		}
+	},
+	"name": "find-policy-info-table",
+	"ver": "25.11.11.1527",
+	"version": null,
+	"description": "\"Use this tool only for questions about official company policies. This includes topics like vacation, paid time off (PTO), sick leave, remote work, code of conduct, health insurance, benefits, parental leave, and expense reimbursement. The user will ask questions like 'What is our policy on...' or 'Tell me about...'.\"",
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"type": "TABLE"
+}
