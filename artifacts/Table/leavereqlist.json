@@ -1,0 +1,89 @@
+{
+	"id": "1b93b808-d0c3-f011-8194-000d3ab36af7",
+	"createdAt": "2025-11-17T16:11:12.790Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"fields": [
+		{
+			"fieldName": "lr_displayId",
+			"fieldType": "text",
+			"description": "Human-readable leave request ID used for displaying and referencing requests.",
+			"isUnique": false,
+			"isNullable": true,
+			"id": "cb105866-ade1-449d-d58e-96a23f58482d"
+		},
+		{
+			"fieldName": "employeeID",
+			"fieldType": "text",
+			"description": "Unique identifier of the employee who submitted the leave request.",
+			"isUnique": false,
+			"isNullable": true,
+			"id": "ab01f448-9c63-4495-a701-bb4cbfef1b03"
+		},
+		{
+			"fieldName": "emp_fullName",
+			"fieldType": "text",
+			"description": "Full name of the employee associated with the leave request.",
+			"isUnique": false,
+			"isNullable": true,
+			"id": "01c86775-1341-4145-8fca-61db47425360"
+		},
+		{
+			"fieldName": "type",
+			"fieldType": "text",
+			"description": "Type of leave requested (e.g., annual, sick, unpaid).",
+			"isUnique": false,
+			"isNullable": true,
+			"id": "195b8d28-4548-4b27-ebdc-e1b51c4eb720"
+		},
+		{
+			"fieldName": "fromDate",
+			"fieldType": "timestamp",
+			"description": "Start date of the requested leave period.",
+			"isUnique": false,
+			"isNullable": true,
+			"id": "b9246999-4fa4-4897-de29-ea0dbb9e25ca"
+		},
+		{
+			"fieldName": "toDate",
+			"fieldType": "timestamp",
+			"description": "End date of the requested leave period.",
+			"isUnique": false,
+			"isNullable": true,
+			"id": "3ba96e78-7436-4831-c24c-7099790f0f01"
+		},
+		{
+			"fieldName": "status",
+			"fieldType": "text",
+			"description": "Approval status of the leave request (Pending, Approve, Reject).",
+			"isUnique": false,
+			"isNullable": true,
+			"id": "d1087a68-05f0-4727-8368-faae5befae78"
+		},
+		{
+			"fieldName": "reason",
+			"fieldType": "text",
+			"description": "Employee’s explanation or justification for the leave request.",
+			"isUnique": false,
+			"isNullable": true,
+			"id": "e3fbd202-b0a6-45c6-cf89-ac954f638f9e"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": {},
+	"name": "leavereqlist",
+	"description": "Central table for tracking employee leave requests with full details used for searching, calculations, and approvals.",
+	"ver": "25.11.20.1149",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"generationStrategy": null,
+	"rolesRead": [
+		{
+			"id": "80b5ca71-518a-ef11-8474-000d3ab844f9",
+			"name": "Admin",
+			"ver": "25.10.23.1438"
+		}
+	],
+	"rolesWrite": []
+}

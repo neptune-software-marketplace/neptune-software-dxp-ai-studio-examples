@@ -1,0 +1,57 @@
+{
+	"id": "4cd6264d-acc3-f011-8194-000d3ab36af7",
+	"createdAt": "2025-11-17T11:55:26.676Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"config": {
+		"serverScript": "6e3904c1-aac3-f011-8194-000d3ab36af7",
+		"parameters": {
+			"question": {
+				"description": "The full natural-language question from the user.  This should be passed exactly as written by the user, without summarizing or rewriting. The script uses this text to normalize, tokenize, and compute relevance against FAQ and knowledge entries.  Examples: - \"How do I reset my password?\" - \"Why is the app so slow in the morning?\" - \"Where can I update my personal information?\"",
+				"type": "string"
+			},
+			"category": {
+				"description": "Optional category filter to steer the search toward a specific knowledge area.  If provided, entries whose category exactly matches this value receive a scoring boost. If empty, all categories are evaluated equally.  Examples: - \"Support\" - \"HowTo\" - \"FAQ\" - \"HR\" - \"IT\" - \"\" (no filter)",
+				"type": "string"
+			}
+		}
+	},
+	"name": "example-FAQ-Script-Tool",
+	"ver": "25.11.20.1110",
+	"version": null,
+	"description": [
+		"==OBJECT STRING==",
+		"This Script Tool looks up FAQ and knowledge answers directly from the \"faq-knowledge\" table and selects the best match for a user’s question.\r",
+		"\r",
+		"Function\r",
+		"- Reads records from the \"faq-knowledge\" table using entities.faq-knowledge.\r",
+		"- Evaluates each entry’s title, content, and category against the user’s question.\r",
+		"- Applies a multi-step scoring algorithm:\r",
+		"  - Normalizes the question and entries (lowercase, removes punctuation and noise).\r",
+		"  - Splits the text into tokens and measures overlap between question tokens and entry tokens.\r",
+		"  - Gives high weight to matches in the title, medium weight to matches in the content, and a small weight for category overlap.\r",
+		"  - Adds extra boosts for certain patterns such as:\r",
+		"    - “How to …” style questions that match “How to …” titles.\r",
+		"    - Password-related queries (reset, change, forgot password).\r",
+		"    - Login, payslip, annual leave, and app-performance related terms.\r",
+		"  - Optionally boosts entries that match a category filter provided by the agent.\r",
+		"\r",
+		"Behavior\r",
+		"- If no rows are available in the table, the tool returns an empty answer with an appropriate error code.\r",
+		"- If no entry reaches a minimum relevance score, the tool returns answer = \"\" and no primarySource.\r",
+		"- If a good match exists, the tool selects one primarySource and up to two supportingSources.\r",
+		"- The tool never invents information. All answers come directly from the \"faq-knowledge\" table.\r",
+		"\r",
+		"Output\r",
+		"- success (boolean)\r",
+		"- data:\r",
+		"    - question: the original question string.\r",
+		"    - answer: the content field of the best matching entry (or empty if no good match exists).\r",
+		"    - primarySource: an object with { id, display_id, category, title, content } for the best match.\r",
+		"    - supportingSources: an array with up to two additional entries that are also relevant.\r",
+		"    - error: null or a short error code (for example: \"missing-question\", \"no-knowledge-rows\", \"no-good-match\").\r",
+		"\r",
+		"The Agent must not modify the factual content of the answer. All guidance must remain consistent with the content stored in the \"faq-knowledge\" table."
+	],
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"type": "SCRIPT"
+}

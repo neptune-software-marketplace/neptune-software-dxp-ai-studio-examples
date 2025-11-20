@@ -1,0 +1,96 @@
+{
+	"id": "855a76d8-a9c3-f011-8194-000d3ab36af7",
+	"createdAt": "2025-11-17T11:37:50.720Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"config": {
+		"modelConfig": {
+			"response_format": "text",
+			"temperature": 0.3,
+			"schema": {},
+			"lastMessages": 10
+		},
+		"vectorConfig": {
+			"k": 1,
+			"threshold": 0.8
+		},
+		"onlyMetadata": false,
+		"provider": {},
+		"maxSteps": 3
+	},
+	"name": "example-HRsupport",
+	"ver": "25.11.20.1134",
+	"version": null,
+	"description": "Assists employees with onboarding, HR policies, and leave management using connected data tools.",
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"model": "5bd7a1a2-a2af-f011-8e61-000d3aba8c49",
+	"localMCPConnections": [],
+	"remoteMCPConnections": [],
+	"roles": [],
+	"tools": [
+		{
+			"id": "9759e561-d0c3-f011-8194-000d3ab36af7",
+			"name": "example-LeaveReq-Table-Tool",
+			"ver": "25.11.20.1110"
+		},
+		{
+			"id": "4cd6264d-acc3-f011-8194-000d3ab36af7",
+			"name": "example-FAQ-Script-Tool",
+			"ver": "25.11.20.1110"
+		}
+	],
+	"tableSources": [],
+	"outputGuardrailsMap": [],
+	"inputGuardrailsMap": [],
+	"prompts": [
+		{
+			"id": "c83dbe2c-d4c3-f011-8194-000d3ab36af7",
+			"name": "C83DBE2C-D4C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1640"
+		},
+		{
+			"id": "87fddcdf-73c4-f011-8195-000d3a69cabf",
+			"name": "87FDDCDF-73C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1144"
+		},
+		{
+			"id": "657857af-a9c4-f011-8195-000d3a69cabf",
+			"name": "657857AF-A9C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1809"
+		},
+		{
+			"id": "57bd98e3-9bc4-f011-8195-000d3a69cabf",
+			"name": "57BD98E3-9BC4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1630"
+		},
+		{
+			"id": "45bb9338-a8c4-f011-8195-000d3a69cabf",
+			"name": "45BB9338-A8C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1758"
+		},
+		{
+			"id": "44d59b93-04c6-f011-8194-000d3ab7ae91",
+			"name": "44D59B93-04C6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1132"
+		},
+		{
+			"id": "2c6c7967-a7c4-f011-8195-000d3a69cabf",
+			"name": "2C6C7967-A7C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1752"
+		},
+		{
+			"id": "2528ac6d-d4c3-f011-8194-000d3ab36af7",
+			"name": "2528AC6D-D4C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1642"
+		},
+		{
+			"id": "1e97a5e1-a9c3-f011-8194-000d3ab36af7",
+			"name": "1E97A5E1-A9C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1138"
+		},
+		{
+			"id": "095e4476-afc3-f011-8194-000d3ab36af7",
+			"name": "095E4476-AFC3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1218"
+		}
+	]
+}

@@ -1,0 +1,27 @@
+{
+	"id": "76f7638a-74c4-f011-8195-000d3a69cabf",
+	"createdAt": "2025-11-18T11:48:47.593Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"config": {},
+	"name": "exampleHRonboardingGuardrail",
+	"ver": "25.11.20.1129",
+	"version": null,
+	"description": null,
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"model": "5bd7a1a2-a2af-f011-8e61-000d3aba8c49",
+	"script": null,
+	"rulesengine": null,
+	"type": "llm",
+	"prompts": [
+		{
+			"id": "f0cc1d4c-75c4-f011-8195-000d3a69cabf",
+			"name": "F0CC1D4C-75C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1154"
+		},
+		{
+			"id": "79b58adb-74c4-f011-8195-000d3a69cabf",
+			"name": "79B58ADB-74C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1151"
+		}
+	]
+}

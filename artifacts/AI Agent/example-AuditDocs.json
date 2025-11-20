@@ -1,0 +1,156 @@
+{
+	"id": "72c63946-b5c3-f011-8194-000d3ab36af7",
+	"createdAt": "2025-11-17T12:59:39.340Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"config": {
+		"modelConfig": {
+			"response_format": "text",
+			"temperature": 0.25,
+			"schema": {},
+			"lastMessages": 5
+		},
+		"vectorConfig": {
+			"k": 1,
+			"threshold": 0.8
+		},
+		"onlyMetadata": false,
+		"provider": {},
+		"maxSteps": 3
+	},
+	"name": "example-AuditDocs",
+	"ver": "25.11.20.1057",
+	"version": null,
+	"description": "Example agent that reviews documents and highlights compliance issues based on configured audit rules.",
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"model": "5bd7a1a2-a2af-f011-8e61-000d3aba8c49",
+	"localMCPConnections": [],
+	"remoteMCPConnections": [],
+	"roles": [],
+	"tools": [
+		{
+			"id": "dbedeccf-9ac4-f011-8195-000d3a69cabf",
+			"name": "example-Email-Tool",
+			"ver": "25.11.20.1102"
+		},
+		{
+			"id": "c508b51d-b5c3-f011-8194-000d3ab36af7",
+			"name": "example-audit-Script-Tool",
+			"ver": "25.11.20.1040"
+		}
+	],
+	"tableSources": [],
+	"outputGuardrailsMap": [],
+	"inputGuardrailsMap": [],
+	"prompts": [
+		{
+			"id": "f970eaf8-b7c3-f011-8194-000d3ab36af7",
+			"name": "F970EAF8-B7C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1318"
+		},
+		{
+			"id": "efa3a8ca-dfc3-f011-8194-000d3ab36af7",
+			"name": "EFA3A8CA-DFC3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1804"
+		},
+		{
+			"id": "e2d0680c-bfc3-f011-8194-000d3ab36af7",
+			"name": "E2D0680C-BFC3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1409"
+		},
+		{
+			"id": "d9baf1a2-99c4-f011-8195-000d3a69cabf",
+			"name": "D9BAF1A2-99C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1614"
+		},
+		{
+			"id": "d6baf1a2-99c4-f011-8195-000d3a69cabf",
+			"name": "D6BAF1A2-99C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1614"
+		},
+		{
+			"id": "d3fb8d30-99c4-f011-8195-000d3a69cabf",
+			"name": "D3FB8D30-99C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1611"
+		},
+		{
+			"id": "d010076c-7fc4-f011-8195-000d3a69cabf",
+			"name": "D010076C-7FC4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1306"
+		},
+		{
+			"id": "c5717d56-b5c3-f011-8194-000d3ab36af7",
+			"name": "C5717D56-B5C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1300"
+		},
+		{
+			"id": "9ff2ac02-81c4-f011-8195-000d3a69cabf",
+			"name": "9FF2AC02-81C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1318"
+		},
+		{
+			"id": "9461931c-e5c3-f011-8194-000d3ab36af7",
+			"name": "9461931C-E5C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1842"
+		},
+		{
+			"id": "8856bda2-80c4-f011-8195-000d3a69cabf",
+			"name": "8856BDA2-80C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1315"
+		},
+		{
+			"id": "7ee6cc92-e2c3-f011-8194-000d3ab36af7",
+			"name": "7EE6CC92-E2C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1823"
+		},
+		{
+			"id": "7d65479b-e5c3-f011-8194-000d3ab36af7",
+			"name": "7D65479B-E5C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1845"
+		},
+		{
+			"id": "5aca0996-ffc5-f011-8194-000d3ab7ae91",
+			"name": "5ACA0996-FFC5-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1056"
+		},
+		{
+			"id": "59bf44ac-e5c3-f011-8194-000d3ab36af7",
+			"name": "59BF44AC-E5C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1846"
+		},
+		{
+			"id": "58a77b67-82c4-f011-8195-000d3a69cabf",
+			"name": "58A77B67-82C4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1328"
+		},
+		{
+			"id": "5197f937-e4c3-f011-8194-000d3ab36af7",
+			"name": "5197F937-E4C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1835"
+		},
+		{
+			"id": "4f886e1e-e2c3-f011-8194-000d3ab36af7",
+			"name": "4F886E1E-E2C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1820"
+		},
+		{
+			"id": "49ba97a0-ffc5-f011-8194-000d3ab7ae91",
+			"name": "49BA97A0-FFC5-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1057"
+		},
+		{
+			"id": "44c7090d-9ac4-f011-8195-000d3a69cabf",
+			"name": "44C7090D-9AC4-F011-8195-000D3A69CABF",
+			"ver": "25.11.18.1617"
+		},
+		{
+			"id": "346407f4-e4c3-f011-8194-000d3ab36af7",
+			"name": "346407F4-E4C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1840"
+		},
+		{
+			"id": "164461d2-e2c3-f011-8194-000d3ab36af7",
+			"name": "164461D2-E2C3-F011-8194-000D3AB36AF7",
+			"ver": "25.11.17.1825"
+		}
+	]
+}

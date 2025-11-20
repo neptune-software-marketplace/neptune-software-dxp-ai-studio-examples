@@ -1,0 +1,56 @@
+{
+	"id": "29f1a59d-aeb4-f011-8e60-000d3ab62c7a",
+	"createdAt": "2025-10-29T10:04:12.103Z",
+	"createdBy": "ext-fabrizio.pace@neptune-software.com",
+	"config": {
+		"modelConfig": {
+			"response_format": "text",
+			"temperature": 1,
+			"schema": {}
+		},
+		"vectorConfig": {
+			"k": 1,
+			"threshold": 0.8
+		},
+		"onlyMetadata": false,
+		"provider": {},
+		"exposeToolsAsSkills": false,
+		"maxSteps": 2
+	},
+	"name": "example-EquipmentTable",
+	"ver": "25.11.20.1043",
+	"version": null,
+	"description": "Equipment Management Agent - Natural-language CRUD/search over a Neptune table that tracks e-learning equipment",
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"model": "5bd7a1a2-a2af-f011-8e61-000d3aba8c49",
+	"localMCPConnections": [],
+	"remoteMCPConnections": [],
+	"roles": [],
+	"tools": [
+		{
+			"id": "52018073-b9b4-f011-8e60-000d3ab62c7a",
+			"name": "example-equipment-Table-Tool",
+			"ver": "25.11.20.1043"
+		}
+	],
+	"tableSources": [],
+	"outputGuardrailsMap": [],
+	"inputGuardrailsMap": [],
+	"prompts": [
+		{
+			"id": "9fd26dc8-fac5-f011-8194-000d3ab7ae91",
+			"name": "9FD26DC8-FAC5-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1022"
+		},
+		{
+			"id": "1d4fad93-24bf-f011-8194-0022489d3772",
+			"name": "1D4FAD93-24BF-F011-8194-0022489D3772",
+			"ver": "25.11.11.1733"
+		},
+		{
+			"id": "0346d7ac-aeb4-f011-8e60-000d3ab62c7a",
+			"name": "0346D7AC-AEB4-F011-8E60-000D3AB62C7A",
+			"ver": "25.10.29.1004"
+		}
+	]
+}
