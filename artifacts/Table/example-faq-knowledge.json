@@ -42,12 +42,6 @@
 	"includeDataInPackage": true,
 	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
 	"generationStrategy": "uuid",
-	"rolesRead": [
-		{
-			"id": "80b5ca71-518a-ef11-8474-000d3ab844f9",
-			"name": "Admin",
-			"ver": "25.10.23.1438"
-		}
-	],
+	"rolesRead": [],
 	"rolesWrite": []
 }
