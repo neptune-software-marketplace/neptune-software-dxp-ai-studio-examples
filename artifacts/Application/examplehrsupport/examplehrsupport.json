@@ -1,0 +1,119 @@
+{
+	"id": "67ba4776-20c6-f011-8194-000d3ab7ae91",
+	"createdAt": "2025-11-20T14:51:58.423Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "23e3aef8-fa9f-4314-c824-89c7f9b75fac",
+			"fieldName": "chatbox",
+			"fieldParent": 0,
+			"fieldType": "neptune_chatbox",
+			"script": "",
+			"customComponent": true,
+			"request": [],
+			"response": [],
+			"attributes": [
+				{
+					"attribute": "agent",
+					"grouping": "Properties",
+					"value": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+					"script": "",
+					"fieldId": "c9cf160d-1952-4284-ecb0-466f0197adf6",
+					"translation": []
+				},
+				{
+					"attribute": "stream",
+					"grouping": "Properties",
+					"value": "true",
+					"script": "",
+					"fieldId": "c9cf160d-1952-4284-ecb0-466f0197adf6",
+					"translation": []
+				},
+				{
+					"attribute": "state",
+					"grouping": "Properties",
+					"value": "true",
+					"script": "",
+					"fieldId": "418b57b3-134d-437e-e16f-a64e1b8644b4",
+					"translation": []
+				},
+				{
+					"attribute": "state",
+					"grouping": "Properties",
+					"value": "true",
+					"script": "",
+					"fieldId": "619f34ba-0e93-489a-e3dd-8580adf216bc",
+					"translation": []
+				}
+			],
+			"data": [
+				{
+					"fieldNo": "69c794f1-db83-4e93-c561-cd80912f51d2",
+					"fieldName": "contentDialogChatSourceData",
+					"fieldParent": "23e3aef8-fa9f-4314-c824-89c7f9b75fac",
+					"fieldType": "neptune.CustomComponentContent",
+					"script": "",
+					"interfaceId": "dd677a00-ab77-4afb-a90d-3d25604803bb",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": []
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "25.11.20.1452",
+	"application": "examplehrsupport",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": false,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_integration": false,
+	"ui5_chart": false,
+	"ui5_theme": "",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"apis": [],
+	"i18n": []
+}

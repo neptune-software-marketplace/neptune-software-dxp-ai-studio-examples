@@ -1,0 +1,29 @@
+{
+	"id": "4e8a4cfa-22c6-f011-8194-000d3ab7ae91",
+	"createdAt": "2025-11-20T15:09:59.010Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"variables": [],
+	"prompt": [
+		"==OBJECT STRING==",
+		"# Guardrail – Blocked Topics\r",
+		"\r",
+		"The agent must **block and decline** any request involving:\r",
+		"\r",
+		"- Coding, programming, debugging, scripts, or technical development.\r",
+		"- Weather, news, politics, history.\r",
+		"\r",
+		"ALLOW EVERYTHING ELSE OUTSIDE OF THESE TOPICS.\r",
+		"ALLOW Emploiyee IDs (e.g. E-1001, E1002, E-1003, etc)\r",
+		"ALLOW Leave Request IDs (LR-1001, LR-1002, etc)\r",
+		"\r",
+		"\r",
+		"If the message does not match any forbidden category, you must treat it as allowed HR content and respond normally.\r",
+		""
+	],
+	"agent": null,
+	"guardrail": "76f7638a-74c4-f011-8195-000d3a69cabf",
+	"ver": "25.11.20.1509",
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"status": "active",
+	"name": "4E8A4CFA-22C6-F011-8194-000D3AB7AE91"
+}

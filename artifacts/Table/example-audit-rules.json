@@ -1,0 +1,122 @@
+{
+	"id": "fc112b6b-b2c3-f011-8194-000d3ab36af7",
+	"createdAt": "2025-11-17T12:39:13.430Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"fields": [
+		{
+			"id": "b538285a-17f3-444b-9f07-b994c158df70",
+			"fieldName": "rule_id",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Unique identifier of the audit rule."
+		},
+		{
+			"id": "12cb187a-b306-4565-c60f-e3b0592db92c",
+			"fieldName": "clause_title",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Human-readable name or title of the rule being evaluated."
+		},
+		{
+			"id": "76eadf98-5348-41a7-b6bc-e015f30bbeab",
+			"fieldName": "severity",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Risk level of the rule (High, Medium, Low) used for scoring."
+		},
+		{
+			"id": "7a76a90a-7d4f-4a02-deba-0e54a6309635",
+			"fieldName": "enabled",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"default": true,
+			"isNullable": true,
+			"description": "Indicates whether the rule is active and should be applied during auditing."
+		},
+		{
+			"id": "180de4ee-fc14-4824-d174-f48bd29411d5",
+			"fieldName": "triggers_any",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "List of phrases that signal the rule is applicable if any of them appear in the text."
+		},
+		{
+			"id": "2bf274ed-2dfc-47db-e652-a90125a61b51",
+			"fieldName": "require_any",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Phrases where at least one must be present in the text for the rule to be considered satisfied."
+		},
+		{
+			"id": "acadc34c-d6a8-4631-a232-1ce3924ece51",
+			"fieldName": "require_all",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Phrases that must all be present for the rule to be fully satisfied."
+		},
+		{
+			"id": "ba9b3582-1f11-4718-95ab-7e56ddfcc074",
+			"fieldName": "risk_note",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Explanation of the risk or problem when the rule is missing or weak."
+		},
+		{
+			"id": "d48d2e94-a3c8-43be-9cb7-893dfa1de907",
+			"fieldName": "remediation",
+			"fieldType": "text",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Recommended fix or corrective action to address issues detected by this rule."
+		},
+		{
+			"id": "8d98fecb-70e2-4522-9d2e-402392d13809",
+			"fieldName": "regex_any",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Optional list of regular expressions that can be used to detect rule-relevant patterns."
+		},
+		{
+			"id": "3d674e8e-ac10-4e6a-bbd7-dfb9c49023f0",
+			"fieldName": "weight",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Numeric weight used in calculating the overall risk score for missing or weak rules."
+		},
+		{
+			"id": "95a75ce0-fa61-4619-8830-e75c2a8c52d4",
+			"fieldName": "depends_on",
+			"fieldType": "json",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Specifies another rule ID that must be satisfied before this rule is evaluated."
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": {},
+	"name": "example-audit-rules",
+	"description": "Defines the rules used by the audit engine to evaluate contract text, including triggers, requirements, severity, dependencies, and remediation guidance.",
+	"ver": "25.11.21.1610",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"generationStrategy": "uuid",
+	"rolesRead": [
+		{
+			"id": "80b5ca71-518a-ef11-8474-000d3ab844f9",
+			"name": "Admin",
+			"ver": "25.10.23.1438"
+		}
+	],
+	"rolesWrite": []
+}

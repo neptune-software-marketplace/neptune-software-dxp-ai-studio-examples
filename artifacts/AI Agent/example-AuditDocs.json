@@ -18,7 +18,7 @@
 		"maxSteps": 3
 	},
 	"name": "example-AuditDocs",
-	"ver": "25.11.20.1057",
+	"ver": "25.11.21.1430",
 	"version": null,
 	"description": "Example agent that reviews documents and highlights compliance issues based on configured audit rules.",
 	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
@@ -43,9 +43,9 @@
 	"inputGuardrailsMap": [],
 	"prompts": [
 		{
-			"id": "f970eaf8-b7c3-f011-8194-000d3ab36af7",
-			"name": "F970EAF8-B7C3-F011-8194-000D3AB36AF7",
-			"ver": "25.11.17.1318"
+			"id": "f30d05f0-17c6-f011-8194-000d3ab7ae91",
+			"name": "F30D05F0-17C6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1350"
 		},
 		{
 			"id": "efa3a8ca-dfc3-f011-8194-000d3ab36af7",
@@ -53,9 +53,9 @@
 			"ver": "25.11.17.1804"
 		},
 		{
-			"id": "e2d0680c-bfc3-f011-8194-000d3ab36af7",
-			"name": "E2D0680C-BFC3-F011-8194-000D3AB36AF7",
-			"ver": "25.11.17.1409"
+			"id": "ef9cd87a-17c6-f011-8194-000d3ab7ae91",
+			"name": "EF9CD87A-17C6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1347"
 		},
 		{
 			"id": "d9baf1a2-99c4-f011-8195-000d3a69cabf",
@@ -78,9 +78,9 @@
 			"ver": "25.11.18.1306"
 		},
 		{
-			"id": "c5717d56-b5c3-f011-8194-000d3ab36af7",
-			"name": "C5717D56-B5C3-F011-8194-000D3AB36AF7",
-			"ver": "25.11.17.1300"
+			"id": "b31af503-18c6-f011-8194-000d3ab7ae91",
+			"name": "B31AF503-18C6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1351"
 		},
 		{
 			"id": "9ff2ac02-81c4-f011-8195-000d3a69cabf",
@@ -151,6 +151,11 @@
 			"id": "164461d2-e2c3-f011-8194-000d3ab36af7",
 			"name": "164461D2-E2C3-F011-8194-000D3AB36AF7",
 			"ver": "25.11.17.1825"
+		},
+		{
+			"id": "0087e6a5-18c6-f011-8194-000d3ab7ae91",
+			"name": "0087E6A5-18C6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1356"
 		}
 	]
 }

@@ -5,8 +5,9 @@
 	"config": {
 		"modelConfig": {
 			"response_format": "text",
-			"temperature": 1,
-			"schema": {}
+			"temperature": 0.23,
+			"schema": {},
+			"lastMessages": 5
 		},
 		"vectorConfig": {
 			"k": 1,
@@ -15,10 +16,10 @@
 		"onlyMetadata": false,
 		"provider": {},
 		"exposeToolsAsSkills": false,
-		"maxSteps": 2
+		"maxSteps": 3
 	},
 	"name": "example-EquipmentTable",
-	"ver": "25.11.20.1043",
+	"ver": "25.11.20.1336",
 	"version": null,
 	"description": "Equipment Management Agent - Natural-language CRUD/search over a Neptune table that tracks e-learning equipment",
 	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
@@ -28,9 +29,9 @@
 	"roles": [],
 	"tools": [
 		{
-			"id": "52018073-b9b4-f011-8e60-000d3ab62c7a",
+			"id": "963dcd7b-10c6-f011-8194-000d3ab7ae91",
 			"name": "example-equipment-Table-Tool",
-			"ver": "25.11.20.1043"
+			"ver": "25.11.21.1629"
 		}
 	],
 	"tableSources": [],
@@ -38,14 +39,44 @@
 	"inputGuardrailsMap": [],
 	"prompts": [
 		{
+			"id": "ce198527-14c6-f011-8194-000d3ab7ae91",
+			"name": "CE198527-14C6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1323"
+		},
+		{
+			"id": "c94c9d48-0dc6-f011-8194-000d3ab7ae91",
+			"name": "C94C9D48-0DC6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1234"
+		},
+		{
+			"id": "c74c9d48-0dc6-f011-8194-000d3ab7ae91",
+			"name": "C74C9D48-0DC6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1234"
+		},
+		{
+			"id": "c15dba58-0dc6-f011-8194-000d3ab7ae91",
+			"name": "C15DBA58-0DC6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1235"
+		},
+		{
 			"id": "9fd26dc8-fac5-f011-8194-000d3ab7ae91",
 			"name": "9FD26DC8-FAC5-F011-8194-000D3AB7AE91",
 			"ver": "25.11.20.1022"
 		},
 		{
+			"id": "9429acf1-15c6-f011-8194-000d3ab7ae91",
+			"name": "9429ACF1-15C6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1336"
+		},
+		{
 			"id": "1d4fad93-24bf-f011-8194-0022489d3772",
 			"name": "1D4FAD93-24BF-F011-8194-0022489D3772",
 			"ver": "25.11.11.1733"
+		},
+		{
+			"id": "1169c41e-0dc6-f011-8194-000d3ab7ae91",
+			"name": "1169C41E-0DC6-F011-8194-000D3AB7AE91",
+			"ver": "25.11.20.1233"
 		},
 		{
 			"id": "0346d7ac-aeb4-f011-8e60-000d3ab62c7a",

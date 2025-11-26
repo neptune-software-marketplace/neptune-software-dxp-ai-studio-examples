@@ -15,7 +15,7 @@
 	"ver": "25.11.20.1125",
 	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
 	"active": true,
-	"deleted": false,
+	"deleted": true,
 	"baseModelId": null,
 	"enhancedBy": [],
 	"baseModel": null,

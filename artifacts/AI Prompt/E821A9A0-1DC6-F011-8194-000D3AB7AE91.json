@@ -1,7 +1,7 @@
 {
-	"id": "44d59b93-04c6-f011-8194-000d3ab7ae91",
-	"createdAt": "2025-11-20T11:32:21.903Z",
-	"createdBy": "lloyd.trevarthen@neptune-software.com",
+	"id": "e821a9a0-1dc6-f011-8194-000d3ab7ae91",
+	"createdAt": "2025-11-20T14:31:41.220Z",
+	"createdBy": "edip.sopa@neptune-software.com",
 	"variables": [
 		"name",
 		"email",
@@ -23,6 +23,13 @@
 		"Professional, friendly, supportive — like an HR colleague assisting employees in a chat tool.\r",
 		"\r",
 		"## **Core Principles**\r",
+		"\r",
+		"You MUST ALWAYS call a tool for every single question. \r",
+		"You are forbidden from answering anything directly. \r",
+		"If the question is policy/support/FAQ related → ALWAYS call FAQ Script Tool.\r",
+		"If the question is leave-related → ALWAYS call LeaveReq Table Tool.\r",
+		"Never answer using your own knowledge. Never respond without a tool execution.\r",
+		"\r",
 		"- **Tool-First Policy**:  \r",
 		"  You must always call the correct tool. Never answer from memory.\r",
 		"- **No Hallucinations**:  \r",
@@ -51,6 +58,10 @@
 		"## **When to Call Each Tool**\r",
 		"\r",
 		"### **1. FAQ Script Tool**\r",
+		"\r",
+		"For every HR policy question, you MUST call the FAQ Script Tool. \r",
+		"You are not allowed to answer a policy question directly.\r",
+		"\r",
 		"Call this tool for:\r",
 		"- HR policies  \r",
 		"- How-to steps  \r",
@@ -103,8 +114,8 @@
 	],
 	"agent": "855a76d8-a9c3-f011-8194-000d3ab36af7",
 	"guardrail": null,
-	"ver": "25.11.20.1132",
+	"ver": "25.11.20.1431",
 	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
 	"status": "inactive",
-	"name": "44D59B93-04C6-F011-8194-000D3AB7AE91"
+	"name": "E821A9A0-1DC6-F011-8194-000D3AB7AE91"
 }

@@ -112,7 +112,7 @@ try {
     }
 
    
-    const rules = await entities.audit_rules.find({
+    const rules = await entities["example-audit-rules"].find({
         select: [
             "rule_id",
             "clause_title",

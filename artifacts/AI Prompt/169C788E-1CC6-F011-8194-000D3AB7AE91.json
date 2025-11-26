@@ -1,0 +1,30 @@
+{
+	"id": "169c788e-1cc6-f011-8194-000d3ab7ae91",
+	"createdAt": "2025-11-20T14:24:01.140Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"variables": [],
+	"prompt": [
+		"==OBJECT STRING==",
+		"# Guardrail – Blocked Topics\r",
+		"\r",
+		"The agent must **block and decline** any request involving:\r",
+		"\r",
+		"- Employee salaries, payroll, compensation, or any financial record  \r",
+		"- Personal financial information (loans, bank details, debts, income, etc.)  \r",
+		"- Coding, programming, debugging, scripts, or technical development  \r",
+		"- Weather, news, politics, history, or general knowledge  \r",
+		"- Legal advice, medical advice, safety advice, or diagnoses  \r",
+		"- Creative writing (stories, poems, fiction, roleplay)  \r",
+		"- Anything not related to HR processes, onboarding, leave, or internal support\r",
+		"\r",
+		"\r",
+		"If the message does not match any forbidden category, you must treat it as allowed HR content and respond normally.\r",
+		""
+	],
+	"agent": null,
+	"guardrail": "76f7638a-74c4-f011-8195-000d3a69cabf",
+	"ver": "25.11.20.1424",
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"status": "inactive",
+	"name": "169C788E-1CC6-F011-8194-000D3AB7AE91"
+}

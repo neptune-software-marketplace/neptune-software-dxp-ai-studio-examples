@@ -7,19 +7,19 @@
 	"entitySets": [
 		{
 			"id": "fc112b6b-b2c3-f011-8194-000d3ab36af7",
-			"name": "audit_rules",
-			"contextname": "audit_rules"
+			"name": "example-audit-rules",
+			"contextname": "example-audit-rules"
 		}
 	],
 	"agents": [],
 	"apis": [],
 	"name": "example-AuditScript",
-	"ver": "25.11.18.1830",
-	"description": null,
+	"ver": "25.11.25.1334",
+	"description": "Document auditing script that analyzes content against rule-based triggers and requirements, using phrase matching, regex, and similarity scoring to assess clause compliance, risk level, and remediation needs.",
 	"folder": "",
 	"content": "file:///content.js",
 	"useAsGlobalScript": false,
-	"lastRunSuccessful": false,
+	"lastRunSuccessful": true,
 	"isTypescript": false,
 	"language": "javascript",
 	"jsscriptGroup": "ef532b8c-b3c3-f011-8194-000d3ab36af7",
@@ -27,6 +27,6 @@
 	"jsscriptGroupObj": {
 		"id": "ef532b8c-b3c3-f011-8194-000d3ab36af7",
 		"name": "example-AuditScript",
-		"ver": "25.11.20.1041"
+		"ver": "25.11.25.1334"
 	}
 }

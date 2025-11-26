@@ -4,7 +4,7 @@
 	"createdBy": "edip.sopa@neptune-software.com",
 	"name": "example-AuditScript",
 	"description": "Processes document text according to audit_rules and computes rule status, risk score, and remediation details.",
-	"ver": "25.11.20.1041",
+	"ver": "25.11.25.1334",
 	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
 	"projectLogLevel": null
 }
