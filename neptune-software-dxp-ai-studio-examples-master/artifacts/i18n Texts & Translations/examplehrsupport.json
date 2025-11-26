@@ -1,0 +1,23 @@
+{
+	"id": "41cdae81-20c6-f011-8194-000d3ab7ae91",
+	"createdAt": "2025-11-20T14:52:17.576Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN"
+		}
+	],
+	"name": "examplehrsupport",
+	"description": null,
+	"fallbackLocale": "EN",
+	"application": "examplehrsupport",
+	"ver": "25.11.20.1452",
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

@@ -1,0 +1,954 @@
+{
+	"id": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"createdAt": "2025-11-05T15:48:59.906Z",
+	"createdBy": "lloyd.trevarthen@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/neptune-software-marketplace/neptune-software-dxp-ai-studio-examples",
+		"branch": "master"
+	},
+	"name": "neptune-software-dxp-ai-studio-examples",
+	"description": null,
+	"ver": "25.11.11.1752",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
+	"apps": [
+		{
+			"id": "c9aa8658-20c6-f011-8194-000d3ab7ae91",
+			"application": "exampleauditdocs",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "9a917891-20c6-f011-8194-000d3ab7ae91",
+			"application": "exampleequipmentmanagement",
+			"title": "",
+			"description": ""
+		},
+		{
+			"id": "67ba4776-20c6-f011-8194-000d3ab7ae91",
+			"application": "examplehrsupport",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "fc112b6b-b2c3-f011-8194-000d3ab36af7",
+			"name": "example-audit-rules",
+			"description": "Defines the rules used by the audit engine to evaluate contract text, including triggers, requirements, severity, dependencies, and remediation guidance."
+		},
+		{
+			"id": "822ff03c-aac3-f011-8194-000d3ab36af7",
+			"name": "example-faq-knowledge",
+			"description": "Internal knowledge base of company policies, HR procedures, IT support, and how-to guides for employees."
+		},
+		{
+			"id": "1b93b808-d0c3-f011-8194-000d3ab36af7",
+			"name": "example-leave-requests",
+			"description": "Central table for tracking employee leave requests with full details used for searching, calculations, and approvals."
+		}
+	],
+	"jsclass": [
+		{
+			"id": "f553225e-b4c3-f011-8194-000d3ab36af7",
+			"name": "example-AuditScript",
+			"description": "Document auditing script that analyzes content against rule-based triggers and requirements, using phrase matching, regex, and similarity scoring to assess clause compliance, risk level, and remediation needs."
+		},
+		{
+			"id": "6e3904c1-aac3-f011-8194-000d3ab36af7",
+			"name": "example-hr-faq-search",
+			"description": "This script finds the best-matching FAQ entry by comparing the user’s question with all FAQ records using custom text-matching and scoring logic."
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "ef532b8c-b3c3-f011-8194-000d3ab36af7",
+			"name": "example-AuditScript",
+			"description": "Processes document text according to audit_rules and computes rule status, risk score, and remediation details."
+		},
+		{
+			"id": "7800e6ae-aac3-f011-8194-000d3ab36af7",
+			"name": "example-OnboardingScript",
+			"description": ""
+		}
+	],
+	"theme": [],
+	"theme_generator": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "8c392670-21c6-f011-8194-000d3ab7ae91",
+			"description": null,
+			"name": "example-equipment-agent-tile"
+		},
+		{
+			"id": "3d265096-21c6-f011-8194-000d3ab7ae91",
+			"description": null,
+			"name": "example-audit-tile"
+		},
+		{
+			"id": "251912b6-21c6-f011-8194-000d3ab7ae91",
+			"description": null,
+			"name": "example-hr-tile"
+		}
+	],
+	"tile_layout": [],
+	"category": [
+		{
+			"id": "309b6c2c-21c6-f011-8194-000d3ab7ae91",
+			"description": null,
+			"name": "example-ai-tile-group"
+		}
+	],
+	"tilegroup_layout": [],
+	"launchpad": [
+		{
+			"id": "c772cae1-20c6-f011-8194-000d3ab7ae91",
+			"name": "example-AI-Launchpad",
+			"description": "Central launchpad providing quick access to AI-powered assistants for managing equipment, auditing documents, and supporting HR processes."
+		}
+	],
+	"launchpad_layout": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"i18n": [
+		{
+			"id": "e78490bf-b6c3-f011-8194-000d3ab36af7",
+			"name": "newauditapp",
+			"description": null
+		},
+		{
+			"id": "e1c28139-d1c3-f011-8194-000d3ab36af7",
+			"name": "newonboardingapp",
+			"description": null
+		},
+		{
+			"id": "b10d8769-20c6-f011-8194-000d3ab7ae91",
+			"name": "exampleauditdocs",
+			"description": null
+		},
+		{
+			"id": "41cdae81-20c6-f011-8194-000d3ab7ae91",
+			"name": "examplehrsupport",
+			"description": null
+		},
+		{
+			"id": "223a55a2-20c6-f011-8194-000d3ab7ae91",
+			"name": "exampleequipmentmanagement",
+			"description": null
+		}
+	],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": [],
+	"ui5_control": [],
+	"ai_agent": [
+		{
+			"id": "855a76d8-a9c3-f011-8194-000d3ab36af7",
+			"name": "example-HRsupport",
+			"description": "Assists employees with onboarding, HR policies, and leave management using connected data tools."
+		},
+		{
+			"id": "72c63946-b5c3-f011-8194-000d3ab36af7",
+			"name": "example-AuditDocs",
+			"description": "Example agent that reviews documents and highlights compliance issues based on configured audit rules."
+		},
+		{
+			"id": "29f1a59d-aeb4-f011-8e60-000d3ab62c7a",
+			"name": "example-EquipmentTable",
+			"description": "Equipment Management Agent - Natural-language CRUD/search over a Neptune table that tracks e-learning equipment"
+		}
+	],
+	"ai_model": [
+		{
+			"id": "5bd7a1a2-a2af-f011-8e61-000d3aba8c49",
+			"name": "example-OpenAI",
+			"description": "gpt-4o-mini"
+		}
+	],
+	"ai_prompt": [
+		{
+			"id": "f30d05f0-17c6-f011-8194-000d3ab7ae91",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "F30D05F0-17C6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "f0cc1d4c-75c4-f011-8195-000d3a69cabf",
+			"agent": null,
+			"guardrail": "76F7638A-74C4-F011-8195-000D3A69CABF",
+			"name": "F0CC1D4C-75C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "efa3a8ca-dfc3-f011-8194-000d3ab36af7",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "EFA3A8CA-DFC3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "ef9cd87a-17c6-f011-8194-000d3ab7ae91",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "EF9CD87A-17C6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "e821a9a0-1dc6-f011-8194-000d3ab7ae91",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "E821A9A0-1DC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "e12f9f14-1fc6-f011-8194-000d3ab7ae91",
+			"agent": null,
+			"guardrail": "76F7638A-74C4-F011-8195-000D3A69CABF",
+			"name": "E12F9F14-1FC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "e03c445a-1cc6-f011-8194-000d3ab7ae91",
+			"agent": null,
+			"guardrail": "76F7638A-74C4-F011-8195-000D3A69CABF",
+			"name": "E03C445A-1CC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "d9baf1a2-99c4-f011-8195-000d3a69cabf",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "D9BAF1A2-99C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "d6baf1a2-99c4-f011-8195-000d3a69cabf",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "D6BAF1A2-99C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "d3fb8d30-99c4-f011-8195-000d3a69cabf",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "D3FB8D30-99C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "d010076c-7fc4-f011-8195-000d3a69cabf",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "D010076C-7FC4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "ce198527-14c6-f011-8194-000d3ab7ae91",
+			"agent": "29F1A59D-AEB4-F011-8E60-000D3AB62C7A",
+			"guardrail": null,
+			"name": "CE198527-14C6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "c94c9d48-0dc6-f011-8194-000d3ab7ae91",
+			"agent": "29F1A59D-AEB4-F011-8E60-000D3AB62C7A",
+			"guardrail": null,
+			"name": "C94C9D48-0DC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "c83dbe2c-d4c3-f011-8194-000d3ab36af7",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "C83DBE2C-D4C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "c74c9d48-0dc6-f011-8194-000d3ab7ae91",
+			"agent": "29F1A59D-AEB4-F011-8E60-000D3AB62C7A",
+			"guardrail": null,
+			"name": "C74C9D48-0DC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "c676c499-6ec9-f011-8195-0022489a1310",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "C676C499-6EC9-F011-8195-0022489A1310"
+		},
+		{
+			"id": "c15dba58-0dc6-f011-8194-000d3ab7ae91",
+			"agent": "29F1A59D-AEB4-F011-8E60-000D3AB62C7A",
+			"guardrail": null,
+			"name": "C15DBA58-0DC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "badfc89c-0dca-f011-8195-0022489a9335",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "BADFC89C-0DCA-F011-8195-0022489A9335"
+		},
+		{
+			"id": "b822aa6f-1fc6-f011-8194-000d3ab7ae91",
+			"agent": null,
+			"guardrail": "76F7638A-74C4-F011-8195-000D3A69CABF",
+			"name": "B822AA6F-1FC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "b31af503-18c6-f011-8194-000d3ab7ae91",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "B31AF503-18C6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "ab4a818b-1dc6-f011-8194-000d3ab7ae91",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "AB4A818B-1DC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "9ff2ac02-81c4-f011-8195-000d3a69cabf",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "9FF2AC02-81C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "9fd26dc8-fac5-f011-8194-000d3ab7ae91",
+			"agent": "29F1A59D-AEB4-F011-8E60-000D3AB62C7A",
+			"guardrail": null,
+			"name": "9FD26DC8-FAC5-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "9e0df73e-12ca-f011-8195-0022489a9335",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "9E0DF73E-12CA-F011-8195-0022489A9335"
+		},
+		{
+			"id": "9461931c-e5c3-f011-8194-000d3ab36af7",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "9461931C-E5C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "9429acf1-15c6-f011-8194-000d3ab7ae91",
+			"agent": "29F1A59D-AEB4-F011-8E60-000D3AB62C7A",
+			"guardrail": null,
+			"name": "9429ACF1-15C6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "93ea02f5-6ec9-f011-8195-0022489a1310",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "93EA02F5-6EC9-F011-8195-0022489A1310"
+		},
+		{
+			"id": "8856bda2-80c4-f011-8195-000d3a69cabf",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "8856BDA2-80C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "87fddcdf-73c4-f011-8195-000d3a69cabf",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "87FDDCDF-73C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "808dcdce-6fc9-f011-8195-0022489a1310",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "808DCDCE-6FC9-F011-8195-0022489A1310"
+		},
+		{
+			"id": "7ee6cc92-e2c3-f011-8194-000d3ab36af7",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "7EE6CC92-E2C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "7d65479b-e5c3-f011-8194-000d3ab36af7",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "7D65479B-E5C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "79b58adb-74c4-f011-8195-000d3a69cabf",
+			"agent": null,
+			"guardrail": "76F7638A-74C4-F011-8195-000D3A69CABF",
+			"name": "79B58ADB-74C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "657857af-a9c4-f011-8195-000d3a69cabf",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "657857AF-A9C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "5aca0996-ffc5-f011-8194-000d3ab7ae91",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "5ACA0996-FFC5-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "59bf44ac-e5c3-f011-8194-000d3ab36af7",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "59BF44AC-E5C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "58a77b67-82c4-f011-8195-000d3a69cabf",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "58A77B67-82C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "57bd98e3-9bc4-f011-8195-000d3a69cabf",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "57BD98E3-9BC4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "5197f937-e4c3-f011-8194-000d3ab36af7",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "5197F937-E4C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "4f886e1e-e2c3-f011-8194-000d3ab36af7",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "4F886E1E-E2C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "4e8a4cfa-22c6-f011-8194-000d3ab7ae91",
+			"agent": null,
+			"guardrail": "76F7638A-74C4-F011-8195-000D3A69CABF",
+			"name": "4E8A4CFA-22C6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "49ba97a0-ffc5-f011-8194-000d3ab7ae91",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "49BA97A0-FFC5-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "45bb9338-a8c4-f011-8195-000d3a69cabf",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "45BB9338-A8C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "44d59b93-04c6-f011-8194-000d3ab7ae91",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "44D59B93-04C6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "44c7090d-9ac4-f011-8195-000d3a69cabf",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "44C7090D-9AC4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "346407f4-e4c3-f011-8194-000d3ab36af7",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "346407F4-E4C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "2c6c7967-a7c4-f011-8195-000d3a69cabf",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "2C6C7967-A7C4-F011-8195-000D3A69CABF"
+		},
+		{
+			"id": "2583b979-6cc9-f011-8195-0022489a1310",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "2583B979-6CC9-F011-8195-0022489A1310"
+		},
+		{
+			"id": "2528ac6d-d4c3-f011-8194-000d3ab36af7",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "2528AC6D-D4C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "1e97a5e1-a9c3-f011-8194-000d3ab36af7",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "1E97A5E1-A9C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "1d4fad93-24bf-f011-8194-0022489d3772",
+			"agent": "29F1A59D-AEB4-F011-8E60-000D3AB62C7A",
+			"guardrail": null,
+			"name": "1D4FAD93-24BF-F011-8194-0022489D3772"
+		},
+		{
+			"id": "1a68ec48-0eca-f011-8195-0022489a9335",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "1A68EC48-0ECA-F011-8195-0022489A9335"
+		},
+		{
+			"id": "1a642704-6cc9-f011-8195-0022489a1310",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "1A642704-6CC9-F011-8195-0022489A1310"
+		},
+		{
+			"id": "169c788e-1cc6-f011-8194-000d3ab7ae91",
+			"agent": null,
+			"guardrail": "76F7638A-74C4-F011-8195-000D3A69CABF",
+			"name": "169C788E-1CC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "164461d2-e2c3-f011-8194-000d3ab36af7",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "164461D2-E2C3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "1169c41e-0dc6-f011-8194-000d3ab7ae91",
+			"agent": "29F1A59D-AEB4-F011-8E60-000D3AB62C7A",
+			"guardrail": null,
+			"name": "1169C41E-0DC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "095e4476-afc3-f011-8194-000d3ab36af7",
+			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "095E4476-AFC3-F011-8194-000D3AB36AF7"
+		},
+		{
+			"id": "06446d29-1cc6-f011-8194-000d3ab7ae91",
+			"agent": null,
+			"guardrail": "76F7638A-74C4-F011-8195-000D3A69CABF",
+			"name": "06446D29-1CC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "05cc111c-1fc6-f011-8194-000d3ab7ae91",
+			"agent": null,
+			"guardrail": "76F7638A-74C4-F011-8195-000D3A69CABF",
+			"name": "05CC111C-1FC6-F011-8194-000D3AB7AE91"
+		},
+		{
+			"id": "0087e6a5-18c6-f011-8194-000d3ab7ae91",
+			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"guardrail": null,
+			"name": "0087E6A5-18C6-F011-8194-000D3AB7AE91"
+		}
+	],
+	"ai_tool": [
+		{
+			"id": "dbedeccf-9ac4-f011-8195-000d3a69cabf",
+			"name": "example-Email-Tool",
+			"description": [
+				"==OBJECT STRING==",
+				"Sends the audit report to the user as a plain HTML email.\r",
+				"The report is already generated and formatted by the audit script.\r",
+				"\r",
+				"Parameters:\r",
+				"\r",
+				"to → Recipient email address (defaults to {{email}}).\r",
+				"\r",
+				"subject → Email subject line (e.g., [Audit Report] {{document_title}} — {{status}}).\r",
+				"\r",
+				"html_body → Full HTML content of the report generated by the example-audit-Script-Tool script.\r",
+				"\r",
+				"Behavior:\r",
+				"\r",
+				"Used after the audit is completed to deliver the report.\r",
+				"Format the email nicely."
+			]
+		},
+		{
+			"id": "c508b51d-b5c3-f011-8194-000d3ab36af7",
+			"name": "example-audit-Script-Tool",
+			"description": [
+				"==OBJECT STRING==",
+				"**Function:**\r",
+				"Analyzes the extracted text of a document against rules in the `audit_rules` table.\r",
+				"\r",
+				"**Input:**\r",
+				"* `document_text` (string): The full text of the document.\r",
+				"* `file_name` (string): The name of the file.\r",
+				"\r",
+				"**Output (`result.data`):**\r",
+				"Returns a JSON object containing:\r",
+				"* `document_label` (string): The name of the document.\r",
+				"* `status` (string): \"Pass\" or \"Fail\".\r",
+				"* `risk_score` (number): Numeric calculation of risk (0 = safe).\r",
+				"* `risk_level` (string): \"Low\", \"Medium\", or \"High\".\r",
+				"* `findings` (string): A pre-formatted text block listing all missing or weak clauses.\r",
+				"* `remediation` (string): A pre-formatted text block listing recommended actions.\r",
+				"* `detailed_clauses` (array): A list of objects containing technical details for every rule checked.\r",
+				"\r",
+				"Always provide the result to the agent."
+			]
+		},
+		{
+			"id": "9759e561-d0c3-f011-8194-000d3ab36af7",
+			"name": "example-LeaveReq-Table-Tool",
+			"description": [
+				"==OBJECT STRING==",
+				"# Tool Instructions: example-LeaveReq-Table-Tool\r",
+				"\r",
+				"You are the ONLY tool that interacts with the `example-leave-requests` table.  \r",
+				"You must always return:\r",
+				"1. A full, structured JSON result  \r",
+				"2. A human-friendly explanation of the result for the agent to use in the final message  \r",
+				"\r",
+				"You never speak to the end-user directly — but you MUST help the agent understand the result clearly.\r",
+				"\r",
+				"---\r",
+				"\r",
+				"## 1. Table Schema (Exact Field Names)\r",
+				"\r",
+				"- recordUUID — Internal unique key (used ONLY for updates)\r",
+				"- lr_displayId — Human-friendly leave request ID\r",
+				"- employeeID — Employee ID\r",
+				"- emp_fullName — Full employee name\r",
+				"- type — Leave type\r",
+				"- fromDate — Start date\r",
+				"- toDate — End date\r",
+				"- status — Pending / Approve / Reject\r",
+				"- reason — Reason text\r",
+				"\r",
+				"---\r",
+				"\r",
+				"## 2. Read Operations\r",
+				"\r",
+				"When reading records:\r",
+				"\r",
+				"- Always return ALL fields listed above  \r",
+				"- Always include `recordUUID`  \r",
+				"- Always include `calculatedDays` (see Section 4)  \r",
+				"- Always use `\"distinct\": false`  \r",
+				"- If no results → return empty list + human-friendly explanation  \r",
+				"- If multiple results → return all matches  \r",
+				"\r",
+				"Human-friendly example:\r",
+				"> Found 1 pending leave request for Alex Feld.\r",
+				"\r",
+				"---\r",
+				"\r",
+				"## 3. Name Validation (Ambiguity Prevention)\r",
+				"\r",
+				"Before running ANY query:\r",
+				"\r",
+				"Reject:\r",
+				"- Single-word names  \r",
+				"- Partial names  \r",
+				"- Fuzzy matches  \r",
+				"- Names without first + last  \r",
+				"\r",
+				"If ambiguous, return:\r",
+				"\r",
+				"```json\r",
+				"{\r",
+				"  \"error\": \"AMBIGUOUS_EMPLOYEE_NAME\",\r",
+				"  \"message\": \"Full employee identification required. Provide employeeID or full emp_fullName.\"\r",
+				"}\r",
+				"Do NOT run the query.\r",
+				"\r",
+				"4. Leave Day Calculation\r",
+				"\r",
+				"For each returned record:\r",
+				"\r",
+				"Convert fromDate + toDate\r",
+				"\r",
+				"Calculate inclusive difference\r",
+				"\r",
+				"If invalid → calculatedDays = 0\r",
+				"\r",
+				"Human-friendly example:\r",
+				"\r",
+				"The leave request spans 5 days.\r",
+				"\r",
+				"5. Annual Leave Balance\r",
+				"\r",
+				"When calculating annual leave:\r",
+				"\r",
+				"Filters:\r",
+				"\r",
+				"type = \"annual\"\r",
+				"\r",
+				"status = \"Approve\"\r",
+				"\r",
+				"Rules:\r",
+				"\r",
+				"Allowance = 25 days\r",
+				"\r",
+				"Remaining = 25 – used\r",
+				"\r",
+				"Return:\r",
+				"\r",
+				"Full structured JSON\r",
+				"\r",
+				"Human-friendly example:\r",
+				"\r",
+				"Alex Feld has used 7 annual leave days. 18 days remain.\r",
+				"\r",
+				"6. Update Records (Approve / Reject)\r",
+				"\r",
+				"You may update only the status field.\r",
+				"\r",
+				"Update Workflow\r",
+				"\r",
+				"First read the record using friendly fields (name, ID, displayId)\r",
+				"\r",
+				"Extract the internal key (recordUUID)\r",
+				"\r",
+				"Update using:\r",
+				"\r",
+				"updateMode: \"single\"\r",
+				"\r",
+				"Filter ONLY on recordUUID\r",
+				"\r",
+				"Data: status = Approve or Reject\r",
+				"\r",
+				"After updating → ALWAYS perform a second read of the same record\r",
+				"\r",
+				"Return:\r",
+				"\r",
+				"Updated full record\r",
+				"\r",
+				"Human-friendly confirmation summary\r",
+				"\r",
+				"Human-friendly example:\r",
+				"\r",
+				"The leave request has been successfully approved.\r",
+				"\r",
+				"7. Mandatory Post-Update Human-Friendly Explanation\r",
+				"\r",
+				"After every successful update:\r",
+				"\r",
+				"You must return the updated record\r",
+				"\r",
+				"You must include a clear explanation such as:\r",
+				"\r",
+				"Status updated from Pending to Approve.\r",
+				"\r",
+				"The agent uses this explanation to craft the final user-facing message.\r",
+				"\r",
+				"8. Output Format Requirements\r",
+				"\r",
+				"Every tool response must include:\r",
+				"\r",
+				"Complete JSON payload\r",
+				"\r",
+				"Human-friendly interpretation text\r",
+				"\r",
+				"Real field names (no placeholders)\r",
+				"\r",
+				"The agent relies on your human-friendly explanation to speak to the user.\r",
+				"You must NEVER remain silent after an update."
+			]
+		},
+		{
+			"id": "963dcd7b-10c6-f011-8194-000d3ab7ae91",
+			"name": "example-equipment-Table-Tool",
+			"description": [
+				"==OBJECT STRING==",
+				"# **Tool Instructions: `equipment`**\r",
+				"\r",
+				"You are the only data-access tool for the `equipment` table.\r",
+				"\r",
+				"Your responsibilities:\r",
+				"1. Read equipment records  \r",
+				"2. Create equipment records  \r",
+				"3. Update any equipment field  \r",
+				"4. Delete equipment records  \r",
+				"\r",
+				"You return **structured row data only**.  \r",
+				"The **agent** is responsible for turning results into natural language.\r",
+				"\r",
+				"---\r",
+				"\r",
+				"## 1. Table Schema\r",
+				"\r",
+				"Use these field names in filters and updates:\r",
+				"\r",
+				"- `id` – unique identifier (primary key)  \r",
+				"- `name` – equipment name  \r",
+				"- `part_number` – equipment / part number  \r",
+				"- `checkup_date` – last maintenance date  \r",
+				"- `checkup_interval` – interval in days  \r",
+				"- `days_until_check` – remaining days (may be negative if overdue)  \r",
+				"- `assigned_for_checking` – boolean flag  \r",
+				"- `assigned_to` – person responsible  \r",
+				"- `latitude` – last known latitude (optional)  \r",
+				"- `longitude` – last known longitude (optional)  \r",
+				"- `pdf` – link to related PDF (optional)  \r",
+				"\r",
+				"Backend column names may be prefixed (e.g. `equipment_name`), but you must always work with the logical field names above.  \r",
+				"Treat `id` as the **unique** field for single-record operations.\r",
+				"\r",
+				"---\r",
+				"\r",
+				"## 2. READ Records\r",
+				"\r",
+				"You may search using any field.\r",
+				"\r",
+				"**Searchable fields** (typical):  \r",
+				"`name`, `part_number`, `assigned_to`, `checkup_date`, `checkup_interval`, `days_until_check`\r",
+				"\r",
+				"**Rules:**\r",
+				"\r",
+				"- Always include `id` in `select` when reading records.  \r",
+				"- If no record matches → return an empty `data` array.  \r",
+				"- If multiple records match → return all (respecting `limit`).  \r",
+				"\r",
+				"**Distinct / count rules (to avoid errors):**\r",
+				"\r",
+				"- For normal data reads: set  \r",
+				"  `count = false` and `distinct = false`.  \r",
+				"- You may use `count = true` (optionally with `distinct = true`) **only when you actually want a count**.  \r",
+				"- **Never** call the tool with `count = false` and `distinct = true`. That combination is not supported and will cause an error.\r",
+				"\r",
+				"---\r",
+				"\r",
+				"## 3. CREATE Records\r",
+				"\r",
+				"You may create new equipment entries.\r",
+				"\r",
+				"**Required fields:**\r",
+				"\r",
+				"- `name`  \r",
+				"- `part_number`  \r",
+				"- `checkup_date`  \r",
+				"- `checkup_interval`  \r",
+				"- `latitude`\r",
+				"- `longitude`\r",
+				"\r",
+				"Other fields are optional and may be included if provided.\r",
+				"\r",
+				"On create:\r",
+				"1. Insert the record with the given values.  \r",
+				"2. The system generates a new `id`.  \r",
+				"3. Return the created record including `id` and all stored fields.\r",
+				"\r",
+				"---\r",
+				"\r",
+				"## 4. UPDATE Records (ALL FIELDS ALLOWED)\r",
+				"\r",
+				"You may update **any** field in the table.\r",
+				"\r",
+				"### 4.1 General rule\r",
+				"\r",
+				"- You may search by any field (e.g. `name`, `part_number`, …).  \r",
+				"- But **single-record updates must always use the unique `id` in the final update call.**\r",
+				"\r",
+				"### 4.2 Required workflow for single updates\r",
+				"\r",
+				"1. **Read step**  \r",
+				"   - Use any filters the agent provides (e.g. `name = \"Flame programmer\"`).  \r",
+				"   - Return records including their `id`.\r",
+				"\r",
+				"2. **Disambiguation**  \r",
+				"   - If more than one row matches, return all and let the agent decide which `id` to use.\r",
+				"\r",
+				"3. **Update step**  \r",
+				"   - Call the update with `updateMode: \"single\"`.  \r",
+				"   - Use a filter **only on `id`**:  \r",
+				"     `filters: [{ \"fieldName\": \"id\", \"value\": \"<ID>\", \"operator\": \"eq\" }]`  \r",
+				"   - Put all fields to change into `data`.\r",
+				"\r",
+				"4. Return the updated row (or an `affected` count, depending on the standard table-tool behavior).\r",
+				"\r",
+				"### 4.3 Forbidden patterns\r",
+				"\r",
+				"- Do **not** call `updateMode: \"single\"` filtered by non-unique fields such as `name`, `part_number`, `assigned_to`, etc.  \r",
+				"- Do **not** send a second, redundant update for the same change after a successful update by `id`.\r",
+				"\r",
+				"### 4.4 Bulk updates\r",
+				"\r",
+				"For intentional bulk changes:\r",
+				"\r",
+				"1. Read all matching rows first.  \r",
+				"2. Collect their `id`s.  \r",
+				"3. Use the appropriate bulk-update mode supported by the table tool.  \r",
+				"\r",
+				"On every CREATE or UPDATE action, the tool must always return a complete, human-readable summary of the equipment record. The summary must include all key fields: name, part_number, latitude, longitude, checkup_date, checkup_interval, assigned_for_checking, and assigned_to.\r",
+				"The agent will then use this output to present a final confirmation message to the user.\r",
+				"\r",
+				"---\r",
+				"\r",
+				"## 5. DELETE Records\r",
+				"\r",
+				"For deletes:\r",
+				"\r",
+				"1. Read using any filter to find the correct record.  \r",
+				"2. Extract its `id`.  \r",
+				"3. Delete using a filter only on `id`.  \r",
+				"4. Return information that a record with that `id` was deleted.\r",
+				"\r",
+				"---\r",
+				"\r",
+				"## 6. Output Behavior\r",
+				"\r",
+				"- Always return structured data following the standard table-tool shape:  \r",
+				"  typically `{ message, data, total }` for reads or `{ message, data: { affected } }` for writes.  \r",
+				"- Do **not** try to speak to the end user.  \r",
+				"- The **agent** will interpret your result and present it in natural language."
+			]
+		},
+		{
+			"id": "4cd6264d-acc3-f011-8194-000d3ab36af7",
+			"name": "example-FAQ-Script-Tool",
+			"description": [
+				"==OBJECT STRING==",
+				"This Script Tool looks up FAQ and knowledge answers directly from the \"faq-knowledge\" table and selects the best match for a user’s question.\r",
+				"\r",
+				"Function\r",
+				"- Reads records from the \"faq-knowledge\" table using entities.faq-knowledge.\r",
+				"- Evaluates each entry’s title, content, and category against the user’s question.\r",
+				"- Applies a multi-step scoring algorithm:\r",
+				"  - Normalizes the question and entries (lowercase, removes punctuation and noise).\r",
+				"  - Splits the text into tokens and measures overlap between question tokens and entry tokens.\r",
+				"  - Gives high weight to matches in the title, medium weight to matches in the content, and a small weight for category overlap.\r",
+				"  - Adds extra boosts for certain patterns such as:\r",
+				"    - “How to …” style questions that match “How to …” titles.\r",
+				"    - Password-related queries (reset, change, forgot password).\r",
+				"    - Login, payslip, annual leave, and app-performance related terms.\r",
+				"  - Optionally boosts entries that match a category filter provided by the agent.\r",
+				"\r",
+				"Behavior\r",
+				"- If no rows are available in the table, the tool returns an empty answer with an appropriate error code.\r",
+				"- If no entry reaches a minimum relevance score, the tool returns answer = \"\" and no primarySource.\r",
+				"- If a good match exists, the tool selects one primarySource and up to two supportingSources.\r",
+				"- The tool never invents information. All answers come directly from the \"faq-knowledge\" table.\r",
+				"\r",
+				"Output\r",
+				"- success (boolean)\r",
+				"- data:\r",
+				"    - question: the original question string.\r",
+				"    - answer: the content field of the best matching entry (or empty if no good match exists).\r",
+				"    - primarySource: an object with { id, display_id, category, title, content } for the best match.\r",
+				"    - supportingSources: an array with up to two additional entries that are also relevant.\r",
+				"    - error: null or a short error code (for example: \"missing-question\", \"no-knowledge-rows\", \"no-good-match\").\r",
+				"\r",
+				"The Agent must not modify the factual content of the answer. All guidance must remain consistent with the content stored in the \"faq-knowledge\" table."
+			]
+		}
+	],
+	"ai_guardrail": [
+		{
+			"id": "76f7638a-74c4-f011-8195-000d3a69cabf",
+			"name": "exampleHRonboardingGuardrail",
+			"description": "A simple example of a model based ruleset evaluation"
+		}
+	],
+	"path_rewrite": [],
+	"vault": []
+}

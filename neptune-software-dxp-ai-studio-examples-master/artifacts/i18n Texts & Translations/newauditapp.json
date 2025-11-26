@@ -1,0 +1,23 @@
+{
+	"id": "e78490bf-b6c3-f011-8194-000d3ab36af7",
+	"createdAt": "2025-11-17T13:10:12.413Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN"
+		}
+	],
+	"name": "newauditapp",
+	"description": null,
+	"fallbackLocale": "EN",
+	"application": "newauditapp",
+	"ver": "25.11.20.1041",
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"active": true,
+	"deleted": true,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}
