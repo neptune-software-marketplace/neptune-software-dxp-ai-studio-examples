@@ -1,0 +1,23 @@
+{
+	"id": "b10d8769-20c6-f011-8194-000d3ab7ae91",
+	"createdAt": "2025-11-20T14:51:37.050Z",
+	"createdBy": "edip.sopa@neptune-software.com",
+	"attributes": [],
+	"locales": [
+		{
+			"isoCode": "EN"
+		}
+	],
+	"name": "exampleauditdocs",
+	"description": null,
+	"fallbackLocale": "EN",
+	"application": "exampleauditdocs",
+	"ver": "25.11.20.1451",
+	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

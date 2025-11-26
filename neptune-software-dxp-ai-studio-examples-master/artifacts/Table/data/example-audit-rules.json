@@ -1,0 +1,208 @@
+[
+	{
+		"id": "5e21371f-bcc3-f011-8194-000d3ab36af7",
+		"createdAt": "1763387320296",
+		"updatedAt": "1763387320296",
+		"createdBy": "edip.sopa@neptune-software.com",
+		"updatedBy": "edip.sopa@neptune-software.com",
+		"rule_id": "GOV_LAW",
+		"clause_title": "Governing Law and Jurisdiction",
+		"severity": "Low",
+		"enabled": true,
+		"triggers_any": [
+			"law",
+			"jurisdiction",
+			"govern"
+		],
+		"require_any": [
+			"governing law",
+			"jurisdiction",
+			"courts of"
+		],
+		"require_all": [
+			"law"
+		],
+		"risk_note": "Low Risk: Missing governing law or dispute resolution forum.",
+		"remediation": "Add a governing law clause specifying applicable law and jurisdiction.",
+		"regex_any": [
+			"governed by the laws",
+			"subject to the jurisdiction"
+		],
+		"weight": null,
+		"depends_on": []
+	},
+	{
+		"id": "5d21371f-bcc3-f011-8194-000d3ab36af7",
+		"createdAt": "1763387320296",
+		"updatedAt": "1763387320296",
+		"createdBy": "edip.sopa@neptune-software.com",
+		"updatedBy": "edip.sopa@neptune-software.com",
+		"rule_id": "SECURITY",
+		"clause_title": "Information Security",
+		"severity": "Medium",
+		"enabled": true,
+		"triggers_any": [
+			"security",
+			"technical measures",
+			"organizational measures"
+		],
+		"require_any": [
+			"technical and organizational measures",
+			"encryption",
+			"access control",
+			"security controls"
+		],
+		"require_all": [
+			"security",
+			"measures"
+		],
+		"risk_note": "Medium Risk: Security measures are unclear or missing.",
+		"remediation": "Include Technical & Organizational Measures: encryption, access control, monitoring, backups, and incident response.",
+		"regex_any": [
+			"information security",
+			"security measures",
+			"technical.*organizational"
+		],
+		"weight": null,
+		"depends_on": [
+			"GDPR"
+		]
+	},
+	{
+		"id": "5c21371f-bcc3-f011-8194-000d3ab36af7",
+		"createdAt": "1763387320296",
+		"updatedAt": "1763387320296",
+		"createdBy": "edip.sopa@neptune-software.com",
+		"updatedBy": "edip.sopa@neptune-software.com",
+		"rule_id": "TERMINATION",
+		"clause_title": "Termination",
+		"severity": "Medium",
+		"enabled": true,
+		"triggers_any": [
+			"terminate",
+			"termination"
+		],
+		"require_any": [
+			"termination for cause",
+			"termination for convenience",
+			"notice period"
+		],
+		"require_all": [
+			"terminate",
+			"notice"
+		],
+		"risk_note": "Medium Risk: Termination rights or notice periods missing.",
+		"remediation": "Add clear termination rights, notice periods, cure periods, and survival clauses.",
+		"regex_any": [
+			"may terminate",
+			"terminated upon"
+		],
+		"weight": null,
+		"depends_on": []
+	},
+	{
+		"id": "5b21371f-bcc3-f011-8194-000d3ab36af7",
+		"createdAt": "1763387320296",
+		"updatedAt": "1763387320296",
+		"createdBy": "edip.sopa@neptune-software.com",
+		"updatedBy": "edip.sopa@neptune-software.com",
+		"rule_id": "LIABILITY",
+		"clause_title": "Limitation of Liability",
+		"severity": "High",
+		"enabled": true,
+		"triggers_any": [
+			"liability",
+			"damages",
+			"claims"
+		],
+		"require_any": [
+			"limitation of liability",
+			"aggregate liability",
+			"liability cap"
+		],
+		"require_all": [
+			"liability",
+			"limit"
+		],
+		"risk_note": "High Risk: No clear limitation of liability is defined.",
+		"remediation": "Add a liability cap, exclusions, and carve-outs for key high-risk scenarios such as data breaches or IP infringement.",
+		"regex_any": [
+			"limitation of liability",
+			"liability shall not exceed"
+		],
+		"weight": null,
+		"depends_on": []
+	},
+	{
+		"id": "5a21371f-bcc3-f011-8194-000d3ab36af7",
+		"createdAt": "1763387320296",
+		"updatedAt": "1763387320296",
+		"createdBy": "edip.sopa@neptune-software.com",
+		"updatedBy": "edip.sopa@neptune-software.com",
+		"rule_id": "CONFIDENTIALITY",
+		"clause_title": "Confidentiality",
+		"severity": "Medium",
+		"enabled": true,
+		"triggers_any": [
+			"confidential",
+			"non-disclosure",
+			"nda"
+		],
+		"require_any": [
+			"confidential information",
+			"confidentiality obligations",
+			"non-disclosure"
+		],
+		"require_all": [
+			"confidential information",
+			"obligations"
+		],
+		"risk_note": "Medium Risk: Confidentiality obligations are unclear or missing.",
+		"remediation": "Add a confidentiality clause defining obligations, carve-outs, exceptions, and post-termination survival.",
+		"regex_any": [
+			"nondisclosure agreement",
+			"non[- ]disclosure"
+		],
+		"weight": null,
+		"depends_on": []
+	},
+	{
+		"id": "5921371f-bcc3-f011-8194-000d3ab36af7",
+		"createdAt": "1763387320296",
+		"updatedAt": "1763387320296",
+		"createdBy": "edip.sopa@neptune-software.com",
+		"updatedBy": "edip.sopa@neptune-software.com",
+		"rule_id": "GDPR",
+		"clause_title": "Data Protection / GDPR",
+		"severity": "High",
+		"enabled": true,
+		"triggers_any": [
+			"personal data",
+			"data processing",
+			"controller",
+			"processor",
+			"gdpr"
+		],
+		"require_any": [
+			"data processing agreement",
+			"processing of personal data",
+			"controller",
+			"processor",
+			"gdpr compliance",
+			"dpa"
+		],
+		"require_all": [
+			"personal data",
+			"processing"
+		],
+		"risk_note": "High Risk: GDPR compliance terms missing or incomplete.",
+		"remediation": "Add GDPR-compliant Data Processing Agreement terms defining roles, rights, breach notifications, and international transfer safeguards.",
+		"regex_any": [
+			"general data protection regulation",
+			"data protection act",
+			"uk gdpr"
+		],
+		"weight": null,
+		"depends_on": []
+	}
+]

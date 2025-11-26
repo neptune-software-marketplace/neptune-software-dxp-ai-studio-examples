@@ -1,0 +1,51 @@
+{
+  "id": "72c63946-b5c3-f011-8194-000d3ab36af7",
+  "createdAt": "2025-11-17T12:59:39.340Z",
+  "createdBy": "edip.sopa@neptune-software.com",
+  "config": {
+    "modelConfig": {
+      "response_format": "text",
+      "temperature": 0.25,
+      "schema": {},
+      "lastMessages": 5
+    },
+    "vectorConfig": {
+      "k": 1,
+      "threshold": 0.8
+    },
+    "onlyMetadata": false,
+    "provider": {},
+    "maxSteps": 3
+  },
+  "name": "example-AuditDocs",
+  "ver": "25.11.21.1430",
+  "version": null,
+  "description": "Example agent that reviews documents and highlights compliance issues based on configured audit rules.",
+  "package": "3d0574f1-5eba-f011-8194-0022489bf196",
+  "model": "5bd7a1a2-a2af-f011-8e61-000d3aba8c49",
+  "localMCPConnections": [],
+  "remoteMCPConnections": [],
+  "roles": [],
+  "tools": [
+    {
+      "id": "dbedeccf-9ac4-f011-8195-000d3a69cabf",
+      "name": "example-Email-Tool",
+      "ver": "25.11.20.1102"
+    },
+    {
+      "id": "c508b51d-b5c3-f011-8194-000d3ab36af7",
+      "name": "example-audit-Script-Tool",
+      "ver": "25.11.20.1040"
+    }
+  ],
+  "tableSources": [],
+  "outputGuardrailsMap": [],
+  "inputGuardrailsMap": [],
+  "prompts": [
+    {
+      "id": "0087e6a5-18c6-f011-8194-000d3ab7ae91",
+      "name": "0087E6A5-18C6-F011-8194-000D3AB7AE91",
+      "ver": "25.11.20.1356"
+    }
+  ]
+}
