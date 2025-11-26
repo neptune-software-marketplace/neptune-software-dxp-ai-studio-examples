@@ -12,6 +12,7 @@
 	"title": "HR Support",
 	"subTitle": null,
 	"description": null,
+	"descriptionFormatter": null,
 	"categoryID": null,
 	"sort": null,
 	"urlApplication": null,
