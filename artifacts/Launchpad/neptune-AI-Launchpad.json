@@ -20,7 +20,7 @@
 		"enhancement": ""
 	},
 	"enhancement": [],
-	"name": "neputne-AI-Launchpad",
+	"name": "neptune-AI-Launchpad",
 	"title": "Example AI Launchpad",
 	"description": "Central launchpad providing quick access to AI-powered assistants for managing equipment, auditing documents, and supporting HR processes.",
 	"startApp": null,
@@ -54,7 +54,7 @@
 	"searchEnableShadeCalc": null,
 	"usedEnableShadeCalc": null,
 	"enableTrace": false,
-	"ver": "25.11.27.1715",
+	"ver": "25.11.27.1720",
 	"pwa_enable": false,
 	"pwa_customImageIos": null,
 	"pwa_customImageAndroidOld": null,
