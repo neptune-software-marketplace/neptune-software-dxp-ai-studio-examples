@@ -114,7 +114,7 @@
 	"launchpad": [
 		{
 			"id": "c772cae1-20c6-f011-8194-000d3ab7ae91",
-			"name": "neputne-AI-Launchpad",
+			"name": "neptune-AI-Launchpad",
 			"description": "Central launchpad providing quick access to AI-powered assistants for managing equipment, auditing documents, and supporting HR processes."
 		}
 	],
@@ -184,11 +184,6 @@
 			"id": "bae88fa1-a8ed-4788-9c05-a0067fb4f153",
 			"name": "NeptuneFreeCompletionModel",
 			"description": "100 Free calls"
-		},
-		{
-			"id": "5bd7a1a2-a2af-f011-8e61-000d3aba8c49",
-			"name": "OpenAI",
-			"description": null
 		},
 		{
 			"id": "01f0757d-9f29-4045-a152-c6ab1036b8c7",
