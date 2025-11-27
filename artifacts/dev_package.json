@@ -114,7 +114,7 @@
 	"launchpad": [
 		{
 			"id": "c772cae1-20c6-f011-8194-000d3ab7ae91",
-			"name": "example-AI-Launchpad",
+			"name": "neputne-AI-Launchpad",
 			"description": "Central launchpad providing quick access to AI-powered assistants for managing equipment, auditing documents, and supporting HR processes."
 		}
 	],
@@ -181,29 +181,39 @@
 	],
 	"ai_model": [
 		{
+			"id": "bae88fa1-a8ed-4788-9c05-a0067fb4f153",
+			"name": "NeptuneFreeCompletionModel",
+			"description": "100 Free calls"
+		},
+		{
 			"id": "5bd7a1a2-a2af-f011-8e61-000d3aba8c49",
 			"name": "OpenAI",
 			"description": null
+		},
+		{
+			"id": "01f0757d-9f29-4045-a152-c6ab1036b8c7",
+			"name": "NeptuneFreeEmbeddingModel",
+			"description": "Important: Requires a Postgres database type to enable a Vector Store"
 		}
 	],
 	"ai_prompt": [
 		{
 			"id": "9e0df73e-12ca-f011-8195-0022489a9335",
-			"agent": "855A76D8-A9C3-F011-8194-000D3AB36AF7",
+			"agent": "855a76d8-a9c3-f011-8194-000d3ab36af7",
 			"guardrail": null,
-			"name": "9E0DF73E-12CA-F011-8195-0022489A9335"
+			"name": "9e0df73e-12ca-f011-8195-0022489a9335"
 		},
 		{
 			"id": "9429acf1-15c6-f011-8194-000d3ab7ae91",
-			"agent": "29F1A59D-AEB4-F011-8E60-000D3AB62C7A",
+			"agent": "29f1a59d-aeb4-f011-8e60-000d3ab62c7a",
 			"guardrail": null,
-			"name": "9429ACF1-15C6-F011-8194-000D3AB7AE91"
+			"name": "9429acf1-15c6-f011-8194-000d3ab7ae91"
 		},
 		{
 			"id": "0087e6a5-18c6-f011-8194-000d3ab7ae91",
-			"agent": "72C63946-B5C3-F011-8194-000D3AB36AF7",
+			"agent": "72c63946-b5c3-f011-8194-000d3ab36af7",
 			"guardrail": null,
-			"name": "0087E6A5-18C6-F011-8194-000D3AB7AE91"
+			"name": "0087e6a5-18c6-f011-8194-000d3ab7ae91"
 		}
 	],
 	"ai_tool": [
