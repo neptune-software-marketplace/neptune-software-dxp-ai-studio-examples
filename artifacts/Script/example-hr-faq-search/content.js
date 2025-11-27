@@ -6,8 +6,8 @@ queries, ranks all entries, and returns the best match plus up to two supporting
 If nothing matches or an error occurs, it returns a clear, structured error message.
 */
 
-try {
 
+try {
     const question = payload && payload.question
         ? String(payload.question).trim()
         : "";
@@ -17,21 +17,18 @@ try {
         : "";
 
     if (!question) {
-        throw new Error("Missing 'question' in payload.");
+        throw new Error("missing-question");
     }
 
     const findOptions = {
         select: ["id", "display_id", "category", "title", "content"],
         where: {},
-        take: 200,        
+        take: 200,
         cache: false
     };
 
-    if (categoryFilter) {
-        findOptions.where.category = categoryFilter;
-    }
 
-    
+
     const rows = await entities["example-faq-knowledge"].find(findOptions);
 
     if (!rows || !rows.length) {
@@ -41,18 +38,27 @@ try {
             answer: "",
             primarySource: null,
             supportingSources: [],
-            error: "No entries found in the knowledge table for the given query."
+            error: "no-knowledge-rows"
         };
         return;
     }
 
     function normalizeText(text) {
         if (!text) return "";
-        return String(text)
+        let norm = String(text)
             .toLowerCase()
             .replace(/[^a-z0-9äöüëéèàçåøæñ\s]/gi, " ")
             .replace(/\s+/g, " ")
             .trim();
+
+       
+        norm = norm
+            .replace(/\blogged out\b/g, "logout")
+            .replace(/\blog out\b/g, "logout")
+            .replace(/\blog in\b/g, "login")
+            .replace(/\blog-in\b/g, "login");
+
+        return norm;
     }
 
     function uniqueTokens(text) {
@@ -97,7 +103,10 @@ try {
     }
 
     const qMentionsPassword = normQ.indexOf("password") !== -1;
-    const qMentionsPwdAction = containsAny(normQ, ["reset", "change", "forgot", "change password", "reset password"]);
+    const qMentionsPwdAction = containsAny(normQ, [
+        "reset", "change", "forgot", "reset password", "change password"
+    ]);
+    const qMentionsLogin = containsAny(normQ, ["login", "logout", "account", "session"]);
 
     const scored = [];
 
@@ -135,61 +144,81 @@ try {
             score += 4;
         }
 
-        if (normQ.indexOf("how to") === 0 && normTitle.indexOf("how to") === 0) {
+        // "how to" questions
+        if (normQ.indexOf("how to ") === 0 && normTitle.indexOf("how to ") === 0) {
             score += 5;
         }
 
-        if (qMentionsPassword && (normTitle.indexOf("password") !== -1 || normContent.indexOf("password") !== -1)) {
-            score += 4; 
+        // Password-specific boosting
+        if (qMentionsPassword &&
+            (normTitle.indexOf("password") !== -1 || normContent.indexOf("password") !== -1)) {
+            score += 4;
             if (qMentionsPwdAction &&
                 (containsAny(normTitle, ["reset", "change", "forgot"]) ||
                  containsAny(normContent, ["reset", "change", "forgot"]))) {
-                score += 8; 
+                score += 8;
             }
         }
 
-        if (category) {
-            const catTokens = uniqueTokens(category);
+        // Login / logout / account issues
+        if (qMentionsLogin &&
+            (containsAny(normTitle, ["login", "logout"]) ||
+             containsAny(normContent, ["login", "logout"]))) {
+            score += 6;
+        }
+
+
+        if (categoryFilter) {
+            const catTokens = uniqueTokens(categoryFilter);
             if (intersectionCount(qSet, catTokens) > 0) {
                 score += 1;
             }
         }
 
+        const totalTokenOverlap = titleMatches + contentMatches;
+
         scored.push({
-            row: {
-                id,
-                display_id,
-                category,
-                title,
-                content
-            },
-            score
+            row: { id, display_id, category, title, content },
+            score,
+            totalTokenOverlap
         });
     }
 
     scored.sort((a, b) => b.score - a.score);
     const best = scored[0];
 
-    if (!best || !best.score) {
+    
+    const MIN_SCORE = 2;
+    const MIN_OVERLAP = 1;
+
+    if (
+        !best ||
+        best.score < MIN_SCORE ||
+        best.totalTokenOverlap < MIN_OVERLAP
+    ) {
         result.success = true;
         result.data = {
             question,
             answer: "",
             primarySource: null,
             supportingSources: [],
-            error: "No relevant FAQ entry found for this question."
+            error: "no-good-match"
         };
         return;
     }
 
     const primary = best.row;
-
     const supporting = [];
+
     for (let i = 1; i < scored.length && supporting.length < 2; i++) {
-        if (scored[i].score > 0 &&
-            scored[i].row.title &&
-            scored[i].row.title !== primary.title) {
-            supporting.push(scored[i].row);
+        const cand = scored[i];
+        if (
+            cand.score >= MIN_SCORE &&
+            cand.totalTokenOverlap >= MIN_OVERLAP &&
+            cand.row.title &&
+            cand.row.title !== primary.title
+        ) {
+            supporting.push(cand.row);
         }
     }
 
@@ -206,10 +235,10 @@ try {
     log.error("FAQ Script Error:", error.message);
     result.success = false;
     result.data = {
-        question: payload && payload.question ? payload.question : "",
+        question: payload && payload.question ? String(payload.question) : "",
         answer: "",
         primarySource: null,
         supportingSources: [],
-        error: error.message
+        error: error.message || "unexpected-error"
     };
 }
