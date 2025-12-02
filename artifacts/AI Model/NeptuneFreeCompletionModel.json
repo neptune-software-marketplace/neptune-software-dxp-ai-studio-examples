@@ -5,7 +5,7 @@
 	"config": {
 		"baseURL": "https://portal.neptune-software.com",
 		"model": "gemini-3.0-pro",
-		"apiKey": "9fafa9e191515a",
+		"apiKey": "@planet9_placeholder_password@",
 		"accessKeyId": "",
 		"secretAccessKey": ""
 	},
