@@ -4,14 +4,14 @@
 	"createdBy": "admin",
 	"config": {
 		"baseURL": "https://portal.neptune-software.com",
-		"model": "gemini-2.5-flash",
-		"apiKey": "4c",
+		"model": "gemini-3.0-pro",
+		"apiKey": "9fafa9e191515a",
 		"accessKeyId": "",
 		"secretAccessKey": ""
 	},
 	"name": "NeptuneFreeCompletionModel",
 	"type": "google",
-	"ver": "25.11.27.1716",
+	"ver": "25.12.02.1143",
 	"version": null,
 	"description": "100 Free calls",
 	"inputType": "text",

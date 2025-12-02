@@ -5,17 +5,18 @@
 	"config": {
 		"baseURL": "https://portal.neptune-software.com",
 		"model": "gemini-embedding-001",
-		"apiKey": "4c",
+		"apiKey": "9fafa9e191515a",
 		"accessKeyId": "",
-		"secretAccessKey": ""
+		"secretAccessKey": "",
+		"vectorDim": "1536"
 	},
 	"name": "NeptuneFreeEmbeddingModel",
 	"type": "google",
-	"ver": "25.11.27.1716",
+	"ver": "25.12.02.1142",
 	"version": null,
 	"description": "Important: Requires a Postgres database type to enable a Vector Store",
 	"inputType": "text",
-	"outputType": "text",
+	"outputType": "vector",
 	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
 	"roles": []
 }
