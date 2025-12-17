@@ -14,7 +14,7 @@
 	"type": "google",
 	"ver": "25.12.02.1142",
 	"version": null,
-	"description": "Important: Requires a Postgres database type to enable a Vector Store",
+	"description": "Free embedding model with 100 free calls, supporting vector store on PostgreSQL and MSSQL.",
 	"inputType": "text",
 	"outputType": "vector",
 	"package": "3d0574f1-5eba-f011-8194-0022489bf196",
