@@ -4,7 +4,7 @@
 	"createdBy": "admin",
 	"config": {
 		"baseURL": "https://portal.neptune-software.com",
-		"model": "gemini-3.0-pro",
+		"model": "gemini-3.1-flash-lite",
 		"apiKey": "@planet9_placeholder_password@",
 		"accessKeyId": "",
 		"secretAccessKey": ""
